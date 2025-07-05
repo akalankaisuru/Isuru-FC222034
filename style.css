@@ -1,28 +1,26 @@
-/* Custom Styles for Portfolio Website - Creative Version */
 
-/* --- Variables --- */
 :root {
-    --primary-color: #5F46A6; /* A deep purple */
-    --secondary-color: #7952B3; /* A lighter purple */
-    --accent-color: #0d6efd; /* Bootstrap blue for contrast */
+    --primary-color: #5F46A6; 
+    --secondary-color: #7952B3;
+    --accent-color: #0d6efd;
     --dark-color: #212529;
     --light-color: #f8f9fa;
     --text-color: #333;
     --heading-font: 'Poppins', sans-serif;
     --body-font: 'Roboto', sans-serif;
 
-    /* Gradients */
-    --primary-gradient: linear-gradient(to right, #5F46A6, #7952B3); /* Purple gradient */
-    --light-gradient: linear-gradient(to right, #f8f9fa, #e9ecef); /* Subtle light gradient */
+ 
+    --primary-gradient: linear-gradient(to right, #5F46A6, #7952B3); 
+    --light-gradient: linear-gradient(to right, #f8f9fa, #e9ecef); 
 }
 
-/* --- General Body Styling --- */
+
 body {
     font-family: var(--body-font);
     line-height: 1.7;
     color: var(--text-color);
-    padding-top: 76px; /* Adjust based on navbar height */
-    overflow-x: hidden; /* Prevent horizontal scroll due to animations */
+    padding-top: 76px; 
+    overflow-x: hidden; 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,12 +40,11 @@ a:hover {
 }
 
 .section-spacing {
-    padding: 80px 0; /* More generous vertical spacing */
-}
+    padding: 80px 0; 
 
-/* --- Header & Navigation --- */
+
 .header {
-    background-color: var(--dark-color); /* Dark navbar */
+    background-color: var(--dark-color); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
 }
@@ -95,12 +92,12 @@ a:hover {
     transform: translateX(-50%) scaleX(1);
 }
 
-/* Navbar scroll effect */
+
 .navbar.scrolled {
-    background-color: rgba(33, 37, 41, 0.95); /* Slightly transparent */
+    background-color: rgba(33, 37, 41, 0.95); 
 }
 
-/* --- Utility Classes --- */
+
 .bg-primary-gradient {
     background: var(--primary-gradient);
     color: #fff;
@@ -124,13 +121,13 @@ a:hover {
     color: var(--primary-color) !important;
 }
 
-/* --- Section Titles --- */
+
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
     position: relative;
     padding-bottom: 15px;
-    margin-bottom: 4rem; /* More spacing below title */
+    margin-bottom: 4rem; 
 }
 
 .section-title::after {
@@ -145,12 +142,12 @@ a:hover {
     border-radius: 5px;
 }
 
-/* Adjustments for text color on dark backgrounds */
+
 #cv-download .section-title {
     color: #fff;
 }
 
-/* --- Hero/About Me Section --- */
+
 #about {
     position: relative;
     z-index: 1;
@@ -169,7 +166,7 @@ a:hover {
     transform: scale(1.02);
 }
 
-/* --- Education & Skills --- */
+
 .timeline {
     position: relative;
     padding: 20px 0 20px 30px;
@@ -213,7 +210,7 @@ a:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* Skills Progress Bars */
+
 .skills-list .skill-item {
     margin-bottom: 20px;
 }
@@ -236,7 +233,7 @@ a:hover {
     transition: width 0.6s ease-in-out;
 }
 
-/* --- Activities --- */
+
 .fancy-list .list-group-item {
     padding: 15px 20px;
     border-bottom: 1px solid #eee;
@@ -250,11 +247,11 @@ a:hover {
 
 .activity-icon {
     font-size: 1.5rem;
-    min-width: 40px; /* Ensure consistent spacing */
+    min-width: 40px;
     text-align: center;
 }
 
-/* --- Projects --- */
+
 #projects .project-card {
     border: none;
     border-radius: 1rem;
@@ -289,10 +286,10 @@ a:hover {
 }
 
 .project-links .btn-primary-gradient {
-    color: #fff; /* Ensure text is white on gradient */
+    color: #fff; 
 }
 
-/* --- CV Download --- */
+
 #cv-download .cv-download-btn {
     border: 2px solid #fff;
     font-weight: 600;
@@ -305,7 +302,7 @@ a:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* --- Contact Section --- */
+
 .contact-list .list-group-item {
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -313,11 +310,11 @@ a:hover {
 
 .contact-icon {
     font-size: 1.6rem;
-    min-width: 45px; /* Consistent icon spacing */
+    min-width: 45px; 
     text-align: center;
 }
 
-/* --- Footer --- */
+
 footer {
     background-color: var(--dark-color);
 }
@@ -332,8 +329,8 @@ footer {
     transform: translateY(-3px);
 }
 
-/* --- Responsive Adjustments --- */
-@media (max-width: 991.98px) { /* Tablet and smaller */
+
+@media (max-width: 991.98px) { 
     .navbar-collapse {
         background-color: var(--dark-color);
         padding-bottom: 1rem;
@@ -343,14 +340,14 @@ footer {
         text-align: center;
     }
     .navbar-nav .nav-link::after {
-        display: none; /* Hide underline on mobile */
+        display: none; 
     }
     #about .profile-img-shadow {
         width: 200px;
         height: 200px;
     }
     #about .animate-fade-in-right, #about .animate-fade-in-left {
-        opacity: 1; /* Disable animations on small screens for simplicity */
+        opacity: 1; 
         transform: none;
     }
     .section-title {
@@ -358,7 +355,7 @@ footer {
     }
 }
 
-@media (max-width: 767.98px) { /* Mobile */
+@media (max-width: 767.98px) { 
     body {
         padding-top: 60px;
     }
@@ -366,13 +363,13 @@ footer {
         padding-top: 80px;
     }
     #about .row {
-        flex-direction: column-reverse; /* Put text above image on mobile */
+        flex-direction: column-reverse; 
     }
     #about .profile-img-shadow {
         margin-bottom: 2rem;
     }
     .timeline {
-        padding-left: 20px; /* Adjust for smaller screens */
+        padding-left: 20px; 
     }
     .timeline-icon {
         left: -25px;
@@ -383,7 +380,7 @@ footer {
 }
 
 
-/* --- Animations (for a smooth reveal effect) --- */
+
 .animate-fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -408,7 +405,7 @@ footer {
     animation: fadeInRight 0.8s ease-out forwards;
 }
 
-/* Add delays for staggered animations */
+
 .delay-1 { animation-delay: 0.2s; }
 .delay-2 { animation-delay: 0.4s; }
 .delay-3 { animation-delay: 0.6s; }
